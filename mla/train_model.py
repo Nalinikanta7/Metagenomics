@@ -21,7 +21,7 @@ with open('tfidf.pickle', 'wb') as f:
 clf = RandomForestRegressor()
 clf.fit(X_train, y_train)
 
-with open('model_RF.pickle', 'wb') as f:
+with open('Model_RF.pickle', 'wb') as f:
     pickle.dump(clf, f)
 
 X_test = tfidf.transform(X_test)
