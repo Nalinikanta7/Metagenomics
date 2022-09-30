@@ -1,9 +1,9 @@
 import pickle
 
-with open('model_RF.pickle', 'rb') as f:
+with open('Model_RF.pickle', 'rb') as f:
     tfidf = pickle.load(f)
 
-with open('model.pickle', 'rb') as f:
+with open('Model_RF.pickle', 'rb') as f:
     clf = pickle.load(f)
 
 x = input("Please enter your phrase: ")
